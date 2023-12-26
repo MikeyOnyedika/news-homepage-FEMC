@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./globals.css" />
+  <title>Frontend Mentor | News homepage</title>
+  <script src="./main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <img class="header__logo" src="./assets/images/logo.svg" alt="logo" />
+      <button id="open-nav-btn">
+        <img class="header__menu-btn" src="./assets/images/icon-menu.svg" />
+      </button>
+      <div class="nav close-nav" id="nav">
+        <div class="nav__wrapper">
+          <button id="close-nav-btn">
+            <img class="nav__close-btn" src="./assets/images/icon-menu-close.svg" />
+          </button>
+          <ul class="nav__nav-bar">
+            <li class="nav__link"><a href="#">Home</a></li>
+            <li class="nav__link"><a href="#">New</a></li>
+            <li class="nav__link"><a href="#">Popular</a></li>
+            <li class="nav__link"><a href="#">Trending</a></li>
+            <li class="nav__link"><a href="#">Categories</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="main-stories">
+      <section class="big-story">
+        <picture>
+          <source media="(min-width: 786px)" srcset="./assets/images/image-web-3-desktop.jpg" />
+          <img class="big-story__image" src="./assets/images/image-web-3-mobile.jpg" />
+        </picture>
+
+        <div class="big-story__details">
+          <h1 class="big-story__title">The Bright Future of Web 3.0?</h1>
+          <div class="big-story__desc-wrapper">
+            <p class="big-story__desc">
+              We dive into the next evolution of the web that claims to put
+              the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <button class="big-story__readmore" type="button">
+              Read more
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="new-stories">
+        <h2 class="new-stories__title">New</h2>
+        <ul class="new-stories__wrapper">
+          <li class="new-story">
+            <a href="#">
+              <h4 class="new-story__title">Hydrogen VS Electric Cars</h4>
+            </a>
+            <p class="new-story__desc">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </li>
+          <li class="new-story">
+            <a href="#">
+              <h4 class="new-story__title">The Downsides of AI Artistry</h4>
+            </a>
+            <p class="new-story__desc">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </li>
+          <li class="new-story">
+            <a href="#">
+              <h4 class="new-story__title">Is VC Funding Drying Up?</h4>
+            </a>
+            <p class="new-story__desc">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="other-stories">
+      <ul class="other-stories-wrapper">
+        <li class="other-story">
+          <img class="other-story__img" src="./assets/images/image-retro-pcs.jpg" />
+          <div class="other-story__desc-wrapper">
+            <h3 class="other-story__numbering">01</h3>
+            <a href="#">
+              <h5 class="other-story__title">Reviving Retro PCs</h5>
+            </a>
+            <p class="other-story__desc">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </li>
+        <li class="other-story">
+          <img class="other-story__img" src="./assets/images/image-top-laptops.jpg" />
+          <div class="other-story__desc-wrapper">
+            <h3 class="other-story__numbering">02</h3>
+            <a href="#">
+              <h5 class="other-story__title">Top 10 Laptops of 2022</h5>
+            </a>
+            <p class="other-story__desc">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </li>
+        <li class="other-story">
+          <img class="other-story__img" src="./assets/images/image-gaming-growth.jpg" />
+          <div class="other-story__desc-wrapper">
+            <h3 class="other-story__numbering">03</h3>
+            <a href="#">
+              <h5 class="other-story__title">The Growth of Gaming</h5>
+            </a>
+            <p class="other-story__desc">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
